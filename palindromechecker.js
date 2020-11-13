@@ -1,0 +1,1 @@
+//this is the JS for the Palindrome Checker
