@@ -1,6 +1,8 @@
-function palindrome(str) {
+const inputText = document.getElementById('input-text')
+
+function palindrome() {
   let regex = /[a-z0-9]/g;
-let newStr = str.toLowerCase().match(regex);
+let newStr = inputText.value.toLowerCase().match(regex);
 let revStr = [];
 newStr.map(x => revStr.unshift(x))
 let answer = [];
@@ -13,11 +15,9 @@ for (let i=0; i < newStr.length; i++) {
   } 
   else {answer.push(false)}
 }
-return answer.every(x => x==true)
+
+document.getElementById('answer').innerText = answer.every(x => x==true);
+// alert(answer.every(x => x==true)) 
+// return answer.every(x => x==true)
 
 }
-
-
-
-let a = palindrome("A man, a plan, a canal. Panama");
-console.log(a)

@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/palindromechecker.css" />
+    <script defer src="/palindromechecker.js"></script>
     <title>Palindrome Checker</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Palindrome Checker</h1>
+    </header>
+    <main>
+      <input type="text" id="input-text" />
+      <input
+        type="submit"
+        onclick="palindrome()"
+        value="Submit"
+        id="submit-button"
+      />
+      <h2 id="answer"></h2>
+    </main>
+  </body>
 </html>

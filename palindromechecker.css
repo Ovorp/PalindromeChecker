@@ -1,3 +1,28 @@
-.body {
-  background-color: aquamarine;
+body {
+  background-color: antiquewhite;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: inherit;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-text {
+  height: 2rem;
+  width: 12rem;
+  margin: 0.5rem;
+}
+
+#submit-button {
+  height: 2.5rem;
+  width: auto;
 }
