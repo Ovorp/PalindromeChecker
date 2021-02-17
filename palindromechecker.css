@@ -5,6 +5,8 @@ body {
 header {
   display: flex;
   justify-content: center;
+  border: black solid 3px;
+  border-radius: 10px;
 }
 
 main {
@@ -25,4 +27,8 @@ main {
 #submit-button {
   height: 2.5rem;
   width: auto;
+}
+
+h2 {
+  text-transform: uppercase;
 }

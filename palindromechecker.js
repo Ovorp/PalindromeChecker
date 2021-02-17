@@ -1,12 +1,11 @@
 const inputText = document.getElementById('input-text')
 
-function palindrome() {
+function palindrome(str) {
   let regex = /[a-z0-9]/g;
-let newStr = inputText.value.toLowerCase().match(regex);
+let newStr = str.value.toLowerCase().match(regex);
 let revStr = [];
-newStr.map(x => revStr.unshift(x))
+newStr.forEach(x => revStr.unshift(x));
 let answer = [];
-console.log(newStr)
 
 for (let i=0; i < newStr.length; i++) {
 
@@ -17,7 +16,10 @@ for (let i=0; i < newStr.length; i++) {
 }
 
 document.getElementById('answer').innerText = answer.every(x => x==true);
-// alert(answer.every(x => x==true)) 
-// return answer.every(x => x==true)
-
 }
+
+document.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    palindrome(inputText)
+  }
+});
